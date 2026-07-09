@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Salma Café — Café de especialidad en Villa Crespo. Momentos que saben a calma, con el mejor café de Buenos Aires.">
+    <title>Salma Café | Café de Especialidad en Villa Crespo</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Montserrat:wght@700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="header__container">
+            <a href="#" class="header__logo">
+                <span class="logo-text">Salma</span>
+                <span class="logo-subtitle">CAFÉ DE ESPECIALIDAD</span>
+            </a>
+            
+            <nav class="header__nav" id="mainNav">
+                <a href="#menu" class="nav-link">Menú</a>
+                <a href="#nosotros" class="nav-link">Nosotros</a>
+                <a href="#galeria" class="nav-link">Galería</a>
+                <a href="#momentos" class="nav-link">Momentos</a>
+                <a href="#contacto" class="nav-link">Contacto</a>
+            </nav>
+            
+            <a href="https://wa.me/5491158506004?text=Hola! Quiero hacer una consulta sobre Salma Café" class="header__cta" target="_blank" rel="noopener">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+                </svg>
+                <span>Escribinos</span>
+            </a>
+            
+            <button class="header__hamburger" id="hamburger" aria-label="Menú">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+    
+    <!-- Mobile Nav -->
+    <nav class="mobile-nav" id="mobileNav">
+        <a href="#menu" class="mobile-nav__link">Menú</a>
+        <a href="#nosotros" class="mobile-nav__link">Nosotros</a>
+        <a href="#galeria" class="mobile-nav__link">Galería</a>
+        <a href="#momentos" class="mobile-nav__link">Momentos</a>
+        <a href="#contacto" class="mobile-nav__link">Contacto</a>
+        <a href="https://wa.me/5491158506004?text=Hola! Quiero hacer una consulta" class="mobile-nav__cta" target="_blank" rel="noopener">Escribinos por WhatsApp</a>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero" id="hero">
+        <div class="hero__bg">
+            <img src="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWlZlb9vM7-mVdfquZsIdWdxii1GfEBKZijehT9WHhkN65RgjLDOb0HRFRDiiFHrtenZctM1GYRxylCt1W4kNSSlWFGTxrgypkVtRqDdxK3Nu9birq7H2YtmpdwoR9qxDhagl3JWi_O4TGRj=w1400-h900-n-k-no-nu" alt="Salma Café interior" class="hero__img" loading="eager">
+            <div class="hero__overlay"></div>
+        </div>
+        
+        <div class="hero__content">
+            <p class="hero__badge">Villa Crespo, Buenos Aires</p>
+            <h1 class="hero__title">
+                <span class="logo-text">Salma</span>
+            </h1>
+            <p class="hero__subtitle">CAFÉ DE ESPECIALIDAD</p>
+            <p class="hero__tagline">Momentos que saben a calma.</p>
+            <p class="hero__description">Café de grano seleccionado, pastelería artesanal y un rincón para desconectarte en el corazón de Villa Crespo.</p>
+            
+            <div class="hero__cta-group">
+                <a href="#menu" class="btn btn--primary">Ver el menú</a>
+                <a href="https://wa.me/5491158506004?text=Hola! Quiero hacer una reserva en Salma Café" class="btn btn--secondary" target="_blank" rel="noopener">Reservá tu mesa</a>
+            </div>
+            
+            <div class="hero__rating">
+                <span class="stars">★★★★★</span>
+                <span class="rating-text">4.8 · 519 reseñas en Google</span>
+            </div>
+        </div>
+        
+        <div class="hero__scroll-hint">
+            <span>Descubrí más</span>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 5v14M5 12l7 7 7-7"/>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Diferenciales -->
+    <section class="diferenciales" id="nosotros">
+        <div class="container">
+            <p class="section-tag fade-in">¿Por qué Salma?</p>
+            <h2 class="section-title fade-in">Cada detalle,<br>hecho con cariño</h2>
+            
+            <div class="diferenciales__grid">
+                <div class="diferencial fade-in">
+                    <div class="diferencial__icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <circle cx="24" cy="24" r="23" stroke="var(--terracotta)" stroke-width="2"/>
+                            <path d="M16 28c0-4.418 3.582-8 8-8s8 3.582 8 8" stroke="var(--terracotta)" stroke-width="2" stroke-linecap="round"/>
+                            <circle cx="24" cy="18" r="4" stroke="var(--terracotta)" stroke-width="2"/>
+                            <path d="M20 32l-2 4M28 32l2 4" stroke="var(--terracotta)" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="diferencial__title">Café de Especialidad</h3>
+                    <p class="diferencial__text">Granos seleccionados, tostados artesanalmente. Cada preparación es una experiencia: desde un espresso intenso hasta un cold brew infusionado 24 horas.</p>
+                </div>
+                
+                <div class="diferencial fade-in">
+                    <div class="diferencial__icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <circle cx="24" cy="24" r="23" stroke="var(--terracotta)" stroke-width="2"/>
+                            <path d="M15 20h18v14a2 2 0 01-2 2H17a2 2 0 01-2-2V20z" stroke="var(--terracotta)" stroke-width="2"/>
+                            <path d="M18 20v-4a6 6 0 0112 0v4" stroke="var(--terracotta)" stroke-width="2"/>
+                            <circle cx="24" cy="28" r="2" fill="var(--terracotta)"/>
+                        </svg>
+                    </div>
+                    <h3 class="diferencial__title">Pastelería Artesanal</h3>
+                    <p class="diferencial__text">Croissants, tortas y cookies que se hornean cada mañana. Ingredientes reales, sin atajos. La cheesecake cremosa es infaltable.</p>
+                </div>
+                
+                <div class="diferencial fade-in">
+                    <div class="diferencial__icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <circle cx="24" cy="24" r="23" stroke="var(--terracotta)" stroke-width="2"/>
+                            <path d="M24 14l2 4 4.5.7-3.2 3.2.8 4.5L24 24l-4.1 2.4.8-4.5-3.2-3.2 4.5-.7L24 14z" stroke="var(--terracotta)" stroke-width="2" stroke-linejoin="round"/>
+                            <path d="M16 32c2-2 5-3 8-3s6 1 8 3" stroke="var(--terracotta)" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="diferencial__title">Atención que Abraza</h3>
+                    <p class="diferencial__text">Llevarte una botellita de agua a la mesa, recordar tu nombre, ese café servido con una sonrisa. No es servicio, es cercanía.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menú -->
+    <section class="menu" id="menu">
+        <div class="container">
+            <p class="section-tag fade-in">Nuestro menú</p>
+            <h2 class="section-title fade-in">Lo que nos hace<br>sentir orgullosos</h2>
+            
+            <div class="menu__tabs fade-in">
+                <button class="menu__tab active" data-tab="cafe">Café</button>
+                <button class="menu__tab" data-tab="brunch">Brunch</button>
+                <button class="menu__tab" data-tab="almuerzo">Almuerzo</button>
+                <button class="menu__tab" data-tab="dulces">Dulces</button>
+                <button class="menu__tab" data-tab="bebidas">Bebidas</button>
+            </div>
+            
+            <!-- Café -->
+            <div class="menu__category active" id="cafe">
+                <div class="menu__grid">
+                    <div class="menu__item">
+                        <div class="menu__item-header">
+                            <h4 class="menu__item-name">Espresso</h4>
+                            <span class="menu__item-price">$4.400</span>
+                        </div>
+                        <p class="menu__item-desc">2 shots de café de especialidad. Intenso, puro, perfecto.</p>
+                    </div>
+                    
+                    <div class="menu__item">
+                        <div class="menu__item-header">
+                            <h4 class="menu__item-name">Americano</h4>
+                            <span class="menu__item-price">$4.400</span>
+                        </div>
+                        <p class="menu__item-desc">2 shots más base de agua a 75°. Suave pero con carácter.</p>
+                    </div>
+                    
+                    <div class="menu__item">
+                        <div class="menu__item-header">
+                            <h4 class="menu__item-name">Magic (Cortado)</h4>
+                            <span class="menu__item-price">$4.700</span>
+                        </div>
+                        <p class="menu__item-desc">2 shots con una ligera cantidad de leche vaporizada. El favorito de la casa.</p>
+                    </div>
+                    
+                    <div class="menu__item">
+                        <div class="menu__item-header">
+                            <h4 class="menu__item-name">Flat White</h4>
+                            <span class="menu__item-price">$4.900</span>
+                        </div>
+                        <p class="menu__item-desc">2 shots con leche vaporizada cremosa, 150ml de pura armonía.</p>
+                    </div>
+                    
+                    <div class="menu__item">
+                        <div class="menu__item-header">
+                            <h4 class="menu__item-name">Cappuccino</h4>
+                            <span class="menu__item-price">$5.300</span>
+                        </div>
+                        <p class="menu__item-desc">1 shot, leche vaporizada y una capa generosa de espuma sedosa.</p>
+                    </div>
+                    
+                    <div class="menu__item">
+                        <div class="menu__item-header">
+                            <h4 class="menu__item-name">Latte</h4>
+                            <span class="menu__item-price">$5.600</span>
+                        </div>
+                        <p class="menu__item-desc">1 shot, leche vaporizada y una delicada capa de espuma. Clásico reconfortante.</p>
+                    </div>
+                    
+                    <div class="menu__item">
+                        <div class="menu__item-header">
+                            <h4 class="menu__item-name">Latte Saborizado</h4>
+                            <span class="menu__item-price">$6.200</span>
+                        </div>
+                        <p class="menu__item-desc">Tu latte personalizado: mocca, vainilla o caramelo. Como más te guste.</p>
+                    </div>
+                    
+                    <div class="menu__item">
+                        <div class="menu__item-header">
+                            <h4 class="menu__item-name">V60 Una Taza</h4>
+                            <span class="menu__item-price">$5.000</span>
+                        </div>
+                        <p class="menu__item-desc">Filtrado artesanal, 240ml. Para los que aman el café puro y limpio.</p>
+                    </div>
+                    
+                    <div class="menu__item">
+                        <div class="menu__item-header">
+                            <h4 class="menu__item-name">Café Salma</h4>
+                            <span class="menu__item-price">$5.900</span>
+                        </div>
+                        <p class="menu__item-desc">Café de temporada: 1 shot, leche vaporizada, mocca y almíbar de naranja. Una joyita.</p>
+                    </div>
+                </div>
+                
+                <div class="menu__cta">
+                    <p class="menu__cta-text">¿Querés ver todo el menú completo?</p>
+                    <a href="https://wa.me/5491158506004?text=Hola! Quiero ver el menú completo de Salma Café" class="btn btn--outline" target="_blank" rel="noopener">Pedí el menú por WhatsApp</a>
+                </div>
+            </div>
+            
+            <!-- Brunch -->
+            <div class="menu__category" id="brunch">
+                <div class="menu__grid">
+                    <div class="menu__item">
+                        <div class="menu__item-header">
+                            <h4 class="menu__item-name">Avocado Toast</h4>
+                            <span class="menu__item-price">$10.600</span>
+                        </div>
+                        <p class="menu__item-desc">Pan brioche con palta pisada, huevo revuelto y tomates cherrys frescos.</p>
+                    </div>
+                    
+                    <div class="menu__item">
+                        <div class="menu__item-header">
+                            <h4 class="menu__item-name">French Toast Dulce</h4>
+                            <span class="menu__item-price">$10.000</span>
+                        </div>
+                        <p class="menu__item-desc">Nuestra versión dulce: french toast con crema, frutos rojos y miel.</p>
+                    </div>
+                    
+                    <div class="menu__item">
+                        <div class="menu__item-header">
+                            <h4 class="menu__item-name">French Toast Salada</h4>
+                            <span class="menu__item-price">$11.900</span>
+                        </div>
+                        <p class="menu__item-desc">Huevo a la plancha, panceta, lomito, queso cheddar y queso crema.</p>
+                    </div>
+                    
+                    <div class="menu__item">
+                        <div class="menu__item-header">
+                            <h4 class="menu__item-name">Bowl De Yogurt</h4>
+                            <span class="menu__item-price">$9.600</span>
+                        </div>
+                        <p class="menu__item-desc">Yogurt griego, granola casera, frutas de estación, miel y escamas de coco.</p>
+                    </div>
+                    
+                    <div class="menu__item">
+                        <div class="menu__item-header">
+                            <h4 class="menu__item-name">Croissant Lomito</h4>
+                            <span class="menu__item-price">$8.500</span>
+                        </div>
+                        <p class="menu__item-desc">Croissant relleno de lomito, cheddar fundido y huevos revueltos.</p>
+                    </div>
+                    
+                    <div class="menu__item">
+                        <div class="menu__item-header">
+                            <h4 class="menu__item-name">Omelette</h4>
+                            <span class="menu__item-price">$10.000</span>
+                        </div>
+                        <p class="menu__item-desc">Con jamón, queso, acompañado de lechuga y tomates secos.</p>
+                    </div>
+                    
+                    <div class="menu__item">
+                        <div class="menu__item-header">
+                            <h4 class="menu__item-name">Chipá Salma</h4>
+                            <span class="menu__item-price">$11.200</span>
+                        </div>
+                        <p class="menu__item-desc">Chipá relleno de pesto de albahaca, rúcula, queso cuartirolo y tomates secos.</p>
+                    </div>
+                </div>
+                
+                <div class="menu__cta">
+                    <p class="menu__cta-text">¿Tenés alguna restricción alimentaria?</p>
+                    <a href="https://wa.me/5491158506004?text=Hola! Tengo una consulta sobre opciones sin TACC o vegetarianas" class="btn btn--outline" target="_blank" rel="noopener">Consultanos por WhatsApp</a>
+                </div>
+            </div>
+            
+            <!-- Almuerzo -->
+            <div class="menu__category" id="almuerzo">
+                <div class="menu__grid">
+                    <div class="menu__item">
+                        <div class="menu__item-header">
+                            <h4 class="menu__item-name">Ensalada Verde</h4>
+                            <span class="menu__item-price">$13.000</span>
+                        </div>
+                        <p class="menu__item-desc">Mix de hojas verdes, tomates cherrys, pickles de cebolla, queso, pollo y palta.</p>
+                    </div>
+                    
+                    <div class="menu__item">
+                        <div class="menu__item-header">
+                            <h4 class="menu__item-name">Focaccia de Pastrón</h4>
+                            <span class="menu__item-price">$17.000</span>
+                        </div>
+                        <p class="menu__item-desc">Relleno de pastrón, queso, pesto, tomate, pickles, rúcula y mostaza de la casa.</p>
+                    </div>
+                    
+                    <div class="menu__item">
+                        <div class="menu__item-header">
+                            <h4 class="menu__item-name">Ensalada De Langostinos</h4>
+                            <span class="menu__item-price">$18.000</span>
+                        </div>
+                        <p class="menu__item-desc">Langostinos, mix de hojas, palta, queso, almendras tostadas y huevo poché.</p>
+                    </div>
+                    
+                    <div class="menu__item">
+                        <div class="menu__item-header">
+                            <h4 class="menu__item-name">Panini Salma</h4>
+                            <span class="menu__item-price">$18.000</span>
+                        </div>
+                        <p class="menu__item-desc">Langostinos, ensalada coleslaw, yogurt agrío y aderezo de mayonesa.</p>
+                    </div>
+                    
+                    <div class="menu__item">
+                        <div class="menu__item-header">
+                            <h4 class="menu__item-name">Panini De Pollo</h4>
+                            <span class="menu__item-price">$15.000</span>
+                        </div>
+                        <p class="menu__item-desc">Pollo, huevo, rúcula, jamón y queso fundido, tomate y mostaza de la casa.</p>
+                    </div>
+                    
+                    <div class="menu__item">
+                        <div class="menu__item-header">
+                            <h4 class="menu__item-name">Sandwich De Pollo</h4>
+                            <span class="menu__item-price">$15.000</span>
+                        </div>
+                        <p class="menu__item-desc">Pan árabe relleno de pollo, pesto, tomates secos, aceitunas y cebolla caramelizada.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Dulces -->
+            <div class="menu__category" id="dulces">
+                <div class="menu__grid">
+                    <div class="menu__item">
+                        <div class="menu__item-header">
+                            <h4 class="menu__item-name">Cheesecake</h4>
+                            <span class="menu__item-price">$11.300</span>
+                        </div>
+                        <p class="menu__item-desc">Cremosa, fresca, perfecta. La que todos recomiendan. Preguntá por la variedad del día.</p>
+                    </div>
+                    
+                    <div class="menu__item">
+                        <div class="menu__item-header">
+                            <h4 class="menu__item-name">Key Lime Pie</h4>
+                            <span class="menu__item-price">$11.500</span>
+                        </div>
+                        <p class="menu__item-desc">Agridulce, refrescante, adictiva. Un clásico americano con our twist.</p>
+                    </div>
+                    
+                    <div class="menu__item">
+                        <div class="menu__item-header">
+                            <h4 class="menu__item-name">Chocotorta</h4>
+                            <span class="menu__item-price">$11.300</span>
+                        </div>
+                        <p class="menu__item-desc">Capas de chocolate y dulce de leche. Argentina en cada bocado.</p>
+                    </div>
+                    
+                    <div class="menu__item">
+                        <div class="menu__item-header">
+                            <h4 class="menu__item-name">Croissant</h4>
+                            <span class="menu__item-price">$4.800</span>
+                        </div>
+                        <p class="menu__item-desc">Hojaldre perfecto, dorado y crujiente. Para los que empiezan el día bien.</p>
+                    </div>
+                    
+                    <div class="menu__item">
+                        <div class="menu__item-header">
+                            <h4 class="menu__item-name">Cookie NY Choco</h4>
+                            <span class="menu__item-price">$5.100</span>
+                        </div>
+                        <p class="menu__item-desc">Grosa, crujiente por fuera, melosa por dentro. Con chips de chocolate.</p>
+                    </div>
+                    
+                    <div class="menu__item">
+                        <div class="menu__item-header">
+                            <h4 class="menu__item-name">Rol De Canela</h4>
+                            <span class="menu__item-price">$6.000</span>
+                        </div>
+                        <p class="menu__item-desc">Dulce, canela, glaseado. Un abrazo en forma de pastelito.</p>
+                    </div>
+                    
+                    <div class="menu__item">
+                        <div class="menu__item-header">
+                            <h4 class="menu__item-name">Cookie Sin TACC</h4>
+                            <span class="menu__item-price">$3.600</span>
+                        </div>
+                        <p class="menu__item-desc">Tipo brownie, sin gluten. Porque la restricción no tiene por qué ser aburrida.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Bebidas -->
+            <div class="menu__category" id="bebidas">
+                <div class="menu__grid">
+                    <div class="menu__item">
+                        <div class="menu__item-header">
+                            <h4 class="menu__item-name">Cold Brew Frutos Rojos</h4>
+                            <span class="menu__item-price">$5.500</span>
+                        </div>
+                        <p class="menu__item-desc">Café infusionado en frío 24 horas, con almíbar de frutos rojos y albahaca.</p>
+                    </div>
+                    
+                    <div class="menu__item">
+                        <div class="menu__item-header">
+                            <h4 class="menu__item-name">Pomelo Tonic</h4>
+                            <span class="menu__item-price">$6.000</span>
+                        </div>
+                        <p class="menu__item-desc">2 shots con agua tónica y almíbar de pomelo. Fresco y sofisticado.</p>
+                    </div>
+                    
+                    <div class="menu__item">
+                        <div class="menu__item-header">
+                            <h4 class="menu__item-name">Limonada Coco Frutos Rojos</h4>
+                            <span class="menu__item-price">$4.700</span>
+                        </div>
+                        <p class="menu__item-desc">Con almíbar de coco, frutos rojos y menta. Verano en un vaso.</p>
+                    </div>
+                    
+                    <div class="menu__item">
+                        <div class="menu__item-header">
+                            <h4 class="menu__item-name">Licuado de Fruta</h4>
+                            <span class="menu__item-price">$6.000</span>
+                        </div>
+                        <p class="menu__item-desc">1 fruta de estación, fresco y natural. Consultá opciones.</p>
+                    </div>
+                    
+                    <div class="menu__item">
+                        <div class="menu__item-header">
+                            <h4 class="menu__item-name">Exprimido De Naranja</h4>
+                            <span class="menu__item-price">$4.100</span>
+                        </div>
+                        <p class="menu__item-desc">Recién exprimido, puro sol argentino en cada trago.</p>
+                    </div>
+                    
+                    <div class="menu__item">
+                        <div class="menu__item-header">
+                            <h4 class="menu__item-name">Chai Latte</h4>
+                            <span class="menu__item-price">$3.900</span>
+                        </div>
+                        <p class="menu__item-desc">Especias cálidas y leche vaporizada. Comfort in a cup.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Producto Estrella -->
+    <section class="estrella">
+        <div class="container">
+            <div class="estrella__grid">
+                <div class="estrella__image fade-in">
+                    <img src="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWlcuSXne2RxccHpm4UpDVhyERMvHyzpvh9mkDPKZxmC8-JLugkBUy73PQ0iiLpNaDcUZALPo-Dr1PEnqn_xPNNEIceYFZiTKultfIHK38jVyQs3HuQLOZb42AY-4AanV4dA3GEzrvayYx4C=w800-h1200-n-k-no-nu" alt="Nuestro café de especialidad" loading="lazy">
+                </div>
+                <div class="estrella__content fade-in">
+                    <p class="section-tag">Nuestro sello</p>
+                    <h2 class="estrella__title">Café de<br>especialidad</h2>
+                    <p class="estrella__text">No es solo café. Es el viaje de una semilla selectionada en fincas de origen, tostada con precisión artesanal, y preparada por baristas que aman lo que hacen.</p>
+                    <p class="estrella__text">Cada taza cuenta una historia: la del productor que eligió el grano, el tostador que foundó el punto perfecto, y el barista que lo transformó en una experiencia sensorial.</p>
+                    <p class="estrella__text">En Salma no tomás café. Vivís el café.</p>
+                    
+                    <div class="estrella__details">
+                        <div class="estrella__detail">
+                            <span class="estrella__detail-number">24h</span>
+                            <span class="estrella__detail-text">Infusión en frío para nuestro Cold Brew</span>
+                        </div>
+                        <div class="estrella__detail">
+                            <span class="estrella__detail-number">100%</span>
+                            <span class="estrella__detail-text">Grano de origen único</span>
+                        </div>
+                        <div class="estrella__detail">
+                            <span class="estrella__detail-number">75°</span>
+                            <span class="estrella__detail-text">Temperatura perfecta para cada método</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galería -->
+    <section class="galeria" id="galeria">
+        <div class="container">
+            <p class="section-tag fade-in">El ambiente</p>
+            <h2 class="section-title fade-in">Un rincón para<br>sentirte en casa</h2>
+            
+            <div class="galeria__grid">
+                <div class="galeria__item galeria__item--large fade-in">
+                    <img src="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWmJavEHzmS4aPlYv1hGPQLP9FS1a3ErytA94tKORL8ZpQ8TlbN9l9qaILY85qNseg0t1eJNC2o5IJ5RMK8aamKc3JOKeiST0Qo4Nng9F06SUdfrh9uhWqpeCD-6Y1wOzvMFqMHJNYifBayA=w800-h1000-n-k-no-nu" alt="Interior de Salma Café" loading="lazy">
+                </div>
+                <div class="galeria__item fade-in">
+                    <img src="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWkcnpjCnF5e_tZab0cT-qVnOMHNRtc_y7kjg_xRAzSu_k5wfe5iPAQoX0n0H-n7QziizBNOJnVbdw6KF_2HELYvtLQz74Qgol1lUR6dfbW753EvXPxk27QmRYGLpyQzDYMEhHgZ8kwpye_Q=w800-h1000-n-k-no-nu" alt="Café preparado en Salma" loading="lazy">
+                </div>
+                <div class="galeria__item fade-in">
+                    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/30/7c/0c/51/caption.jpg?w=1400&h=-1&s=1" alt="Pasteles artesanales" loading="lazy">
+                </div>
+                <div class="galeria__item fade-in">
+                    <img src="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWnOBz7srvac63VkfqfqjH5fK3zoz8m7B5Ou0sUROJ3tAGfcSWuXKmlwkqvEgeqUO-Tf9gcAvELhrJDB7kbUr9pjFxfQn7cyk_55Wxyd_yYKqJ5mpeKPId8SkUppKfok6JDH6breK5-MLPVC=w800-h600-n-k-no-nu" alt="Detalles de Salma Café" loading="lazy">
+                </div>
+                <div class="galeria__item galeria__item--wide fade-in">
+                    <img src="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWlRsxmm3_xJDlLNuPwU13P36oYIv3Hv8-t9Aj2o8BfBKHYH57OMMIGgLeOe7Z7CPKF_iP6sdfQzU4O1kYGuEMnME1X6gWd1EVAXVCqMJj4r_rJQ0YPMdqUwRRwZhB4c0fKjABkLx2p4CIs=w800-h600-n-k-no-nu" alt="Exterior de Salma Café" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonios -->
+    <section class="testimonios">
+        <div class="container">
+            <p class="section-tag fade-in">Lo que dicen</p>
+            <h2 class="section-title fade-in">Nuestros vecinos<br>nos eligen</h2>
+            
+            <div class="testimonios__rating fade-in">
+                <span class="stars">★★★★★</span>
+                <span class="rating-number">4.8</span>
+                <span class="rating-source">Promedio en Google · 519 reseñas</span>
+            </div>
+            
+            <div class="testimonios__grid">
+                <div class="testimonio fade-in">
+                    <div class="testimonio__header">
+                        <div class="testimonio__avatar">ML</div>
+                        <div class="testimonio__info">
+                            <h4 class="testimonio__name">María L.</h4>
+                            <span class="testimonio__date">hace 2 semanas</span>
+                        </div>
+                        <span class="testimonio__stars">★★★★★</span>
+                    </div>
+                    <p class="testimonio__text">"Una joyita en Villa Crespo. El ambiente es precioso y tranquilo, perfecto para escapar del ruido. El café es increíble y la atención impecable. La focaccia de pastrón con la mostaza de la casa es una delicia. ¡100% recomendable!"</p>
+                </div>
+                
+                <div class="testimonio fade-in">
+                    <div class="testimonio__header">
+                        <div class="testimonio__avatar">CR</div>
+                        <div class="testimonio__info">
+                            <h4 class="testimonio__name">Carlos R.</h4>
+                            <span class="testimonio__date">hace 1 mes</span>
+                        </div>
+                        <span class="testimonio__stars">★★★★★</span>
+                    </div>
+                    <p class="testimonio__text">"Como amante del café, puedo decir que Salma es de especialidad de verdad. Se nota la calidad del grano y la expertise detrás de la barra. El lugar es hermoso, ideal para trabajar o conversar. El cheesecake es espectacular."</p>
+                </div>
+                
+                <div class="testimonio fade-in">
+                    <div class="testimonio__header">
+                        <div class="testimonio__avatar">AP</div>
+                        <div class="testimonio__info">
+                            <h4 class="testimonio__name">Ana P.</h4>
+                            <span class="testimonio__date">hace 3 semanas</span>
+                        </div>
+                        <span class="testimonio__stars">★★★★★</span>
+                    </div>
+                    <p class="testimonio__text">"Calidez, elegancia, buen gusto. Cada detalle está pensado para una excelente experiencia. Las porciones son abundantes, las sillas súper cómodas y hay enchufes para conectar el celular o la compu. Mi nuevo café favorito."</p>
+                </div>
+                
+                <div class="testimonio fade-in">
+                    <div class="testimonio__header">
+                        <div class="testimonio__avatar">JM</div>
+                        <div class="testimonio__info">
+                            <h4 class="testimonio__name">Julieta M.</h4>
+                            <span class="testimonio__date">hace 1 semana</span>
+                        </div>
+                        <span class="testimonio__stars">★★★★★</span>
+                    </div>
+                    <p class="testimonio__text">"Muy lindo y cálido lugar. Me encantó pasar la tarde allí. Lo que más me gustó fue su esmerada atención para con los clientes. El café súper rico, con la temperatura perfecta. Full recomendable."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Momentos -->
+    <section class="momentos" id="momentos">
+        <div class="container">
+            <p class="section-tag fade-in">Momentos</p>
+            <h2 class="section-title fade-in">Para cada<br>momento del día</h2>
+            
+            <div class="momentos__grid">
+                <div class="momento fade-in">
+                    <div class="momento__image">
+                        <img src="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWlZlb9vM7-mVdfquZsIdWdxii1GfEBKZijehT9WHhkN65RgjLDOb0HRFRDiiFHrtenZctM1GYRxylCt1W4kNSSlWFGTxrgypkVtRqDdxK3Nu9birq7H2YtmpdwoR9qxDhagl3JWi_O4TGRj=w800-h600-n-k-no-nu" alt="Café de la mañana" loading="lazy">
+                    </div>
+                    <div class="momento__content">
+                        <span class="momento__time">8:00 – 11:00</span>
+                        <h3 class="momento__title">El café de la mañana</h3>
+                        <p class="momento__text">Arrancá el día con un café recién hecho y una medialuna recién salida del horno. El sol de la mañana filtra por las ventanas y el barrio recién se despierta.</p>
+                        <a href="https://wa.me/5491158506004?text=Hola! Quiero reservar para el desayuno de mañana" class="btn btn--small" target="_blank" rel="noopener">Reservá tu mesa</a>
+                    </div>
+                </div>
+                
+                <div class="momento fade-in">
+                    <div class="momento__image">
+                        <img src="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWmJavEHzmS4aPlYv1hGPQLP9FS1a3ErytA94tKORL8ZpQ8TlbN9l9qaILY85qNseg0t1eJNC2o5IJ5RMK8aamKc3JOKeiST0Qo4Nng9F06SUdfrh9uhWqpeCD-6Y1wOzvMFqMHJNYifBayA=w800-h600-n-k-no-nu" alt="Brunch con amigos" loading="lazy">
+                    </div>
+                    <div class="momento__content">
+                        <span class="momento__time">11:00 – 15:00</span>
+                        <h3 class="momento__title">El brunch con amigas</h3>
+                        <p class="momento__text">El momento perfecto para encontrarse, compartir un avocado toast, reírse un rato y tomar fotos que van a romper Instagram. Porque en Salma todo es más lindo.</p>
+                        <a href="https://wa.me/5491158506004?text=Hola! Quiero reservar para un brunch con amigas" class="btn btn--small" target="_blank" rel="noopener">Organizá tu brunch</a>
+                    </div>
+                </div>
+                
+                <div class="momento fade-in">
+                    <div class="momento__image">
+                        <img src="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWkcnpjCnF5e_tZab0cT-qVnOMHNRtc_y7kjg_xRAzSu_k5wfe5iPAQoX0n0H-n7QziizBNOJnVbdw6KF_2HELYvtLQz74Qgol1lUR6dfbW753EvXPxk27QmRYGLpyQzDYMEhHgZ8kwpye_Q=w800-h600-n-k-no-nu" alt="La tarde de café" loading="lazy">
+                    </div>
+                    <div class="momento__content">
+                        <span class="momento__time">15:00 – 20:00</span>
+                        <h3 class="momento__title">La tarde de café</h3>
+                        <p class="momento__text">Esa hora mágica donde el día se relaja. Un latte saborizado, un libro y el silencio cómodo de un lugar que te hace sentir en casa. Todos los días, excepto los domingos que abrimos desde las 15:30.</p>
+                        <a href="https://wa.me/5491158506004?text=Hola! Quiero saber los horarios de la tarde" class="btn btn--small" target="_blank" rel="noopener">Consultá horarios</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Historia -->
+    <section class="historia">
+        <div class="container">
+            <div class="historia__grid">
+                <div class="historia__content fade-in">
+                    <p class="section-tag">Nuestra historia</p>
+                    <h2 class="historia__title">De barrio,<br>para el barrio</h2>
+                    <p class="historia__text">Salma nació de una idea simple: crear un lugar donde el café de especialidad se encontrara con la calidez de un barrio como Villa Crespo.</p>
+                    <p class="historia__text">No éramos expertos en negocios. Éramos dos amigos que amaban el buen café y querían un lugar donde la gente se sintiera como en casa, pero con la calidad que se merece.</p>
+                    <p class="historia__text">Hoy, con más de 500 reseñas y una calificación de 4.8, sabemos que lo logramos. Cada taza, cada croissant, cada sonrisa del equipo es parte de esa historia que se escribe todos los días.</p>
+                    
+                    <div class="historia__team">
+                        <div class="historia__member">
+                            <div class="historia__member-avatar">SM</div>
+                            <div class="historia__member-info">
+                                <h4>Sofía M.</h4>
+                                <span>Co-fundadora & Pastelera</span>
+                            </div>
+                        </div>
+                        <div class="historia__member">
+                            <div class="historia__member-avatar">DL</div>
+                            <div class="historia__member-info">
+                                <h4>Diego L.</h4>
+                                <span>Co-fundador & Barista</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="historia__image fade-in">
+                    <img src="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWlRsxmm3_xJDlLNuPwU13P36oYIv3Hv8-t9Aj2o8BfBKHYH57OMMIGgLeOe7Z7CPKF_iP6sdfQzU4O1kYGuEMnME1X6gWd1EVAXVCqMJj4r_rJQ0YPMdqUwRRwZhB4c0fKjABkLx2p4CIs=w800-h1000-n-k-no-nu" alt="Equipo de Salma Café" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section class="contacto" id="contacto">
+        <div class="container">
+            <p class="section-tag fade-in">Contacto</p>
+            <h2 class="section-title fade-in">¿Querés visitarnos?</h2>
+            
+            <div class="contacto__grid">
+                <div class="contacto__info fade-in">
+                    <div class="contacto__item">
+                        <h4>Dirección</h4>
+                        <p>Acevedo 435, C1414<br>Villa Crespo, Buenos Aires</p>
+                    </div>
+                    
+                    <div class="contacto__item">
+                        <h4>Horarios</h4>
+                        <p>Lunes a Sábado: 8:00 – 20:00<br>Domingos: 15:30 – 20:00</p>
+                    </div>
+                    
+                    <div class="contacto__item">
+                        <h4>WhatsApp</h4>
+                        <p><a href="tel:+5491158506004">011 5850-6004</a></p>
+                    </div>
+                    
+                    <div class="contacto__item">
+                        <h4>Instagram</h4>
+                        <p><a href="https://www.instagram.com/salma_cafe/?igsh=czh2YWl4c2tlcjcz#" target="_blank" rel="noopener">@salma_cafe</a></p>
+                    </div>
+                </div>
+                
+                <div class="contacto__form fade-in">
+                    <h3 class="contacto__form-title">Escribinos</h3>
+                    <form id="contactForm">
+                        <div class="form__group">
+                            <label for="nombre">Tu nombre</label>
+                            <input type="text" id="nombre" name="nombre" required placeholder="¿Cómo te llamás?">
+                        </div>
+                        
+                        <div class="form__group">
+                            <label for="telefono">Tu teléfono</label>
+                            <input type="tel" id="telefono" name="telefono" required placeholder="Para contactarte">
+                        </div>
+                        
+                        <div class="form__group">
+                            <label for="motivo">¿Qué necesitás?</label>
+                            <select id="motivo" name="motivo" required>
+                                <option value="">Elegí una opción</option>
+                                <option value="reserva">Reservar mesa</option>
+                                <option value="consulta">Consulta general</option>
+                                <option value="evento">Organizar un evento</option>
+                                <option value="otro">Otra cosa</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form__group">
+                            <label for="mensaje">Mensaje</label>
+                            <textarea id="mensaje" name="mensaje" rows="4" placeholder="Contanos en qué te podemos ayudar"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn--primary btn--full">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+                            </svg>
+                            Enviar por WhatsApp
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__brand">
+                    <span class="logo-text">Salma</span>
+                    <span class="logo-subtitle">CAFÉ DE ESPECIALIDAD</span>
+                    <p class="footer__tagline">Momentos que saben a calma.</p>
+                </div>
+                
+                <div class="footer__map">
+                    <iframe
+                        src="https://maps.google.com/maps?q=Acevedo+435+Villa+Crespo+Buenos+Aires&output=embed"
+                        width="100%"
+                        height="300"
+                        style="border:0; border-radius: 12px;"
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                        title="Ubicación de Salma Café">
+                    </iframe>
+                </div>
+                
+                <div class="footer__contact">
+                    <h4>Visitá Salma</h4>
+                    <p>Acevedo 435, C1414<br>Villa Crespo, Buenos Aires</p>
+                    <p class="footer__hours">
+                        <strong>Lun-Sáb:</strong> 8:00 – 20:00<br>
+                        <strong>Domingos:</strong> 15:30 – 20:00
+                    </p>
+                    <a href="tel:+5491158506004" class="footer__phone">011 5850-6004</a>
+                    <a href="https://www.instagram.com/salma_cafe/?igsh=czh2YWl4c2tlcjcz#" class="footer__social" target="_blank" rel="noopener">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
+                        </svg>
+                        @salma_cafe
+                    </a>
+                </div>
+            </div>
+            
+            <div class="footer__bottom">
+                <p>&copy; 2026 Salma Café. Todos los derechos reservados.</p>
+                <p class="footer__credit">Diseñado con ☕ por <a href="https://tuweben3dias.com" target="_blank" rel="noopener">tuweben3dias.com</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Flotante -->
+    <a href="https://wa.me/5491158506004?text=Hola! Quiero hacer una consulta" class="whatsapp-float" target="_blank" rel="noopener" aria-label="WhatsApp">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+        </svg>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
